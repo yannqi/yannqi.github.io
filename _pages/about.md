@@ -1,8 +1,8 @@
 ---
-layout: About
+layout: about
 title: about
 permalink: /
-subtitle: <a href='yangqi2021@ia.ac.cn'>Email:yangqi2021@ia.ac.cn</a>. Address: Beijing, China
+subtitle: <a href='yangqi2021@ia.ac.cn'>Email-yangqi2021@ia.ac.cn</a>. Address- Beijing, China
 
 profile:
   align: right
@@ -19,3 +19,8 @@ social: true # includes social icons at the bottom of the page
 I am currently a doctoral student at the [Institute of Automation, Chinese Academy of Sciences](http://www.ia.cas.cn/), under the guidance of Prof. Shiming Xiang. I received my bachelor degree from [University of Electronic Science and Technology of China](https://www.uestc.edu.cn/) under the supervision of Prof. Lu Yang.  My research interests include computer vision, multi-modality, and AIGC.
 
 I am happy to cooperate and share with others. If you are interested in my research area, please contact to me via email!
+
+Research Interests: 
+* Image/audio/video generation
+* Scene understanding, editing
+* Semantic segmentation
