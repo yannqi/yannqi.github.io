@@ -1,6 +1,6 @@
 name: Prettier code formatter
 
-on:
+on:    # TODO 触发条件
   pull_request:
     branches:
       - master
@@ -9,6 +9,7 @@ on:
     branches:
       - master
       - main
+
 
 jobs:
   check:
