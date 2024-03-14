@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Email-<a href='yangqi2021@ia.ac.cn'>yangqi2021@ia.ac.cn</a>. Address-  Beijing, China
+subtitle: Email-<a href='yangqi2021@ia.ac.cn'>yangqi2021@ia.ac.cn</a>. Address-Beijing, China
 
 profile:
   align: right
