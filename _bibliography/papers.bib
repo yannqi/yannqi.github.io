@@ -1,39 +1,72 @@
----
----
 
-@string{aps = {American Physical Society,}}
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+
+@Article{DyHRNet,
+AUTHOR = {Guo, Shichen and Yang, Qi and Xiang, Shiming and Wang, Pengfei and Wang, Xuezhi},
+TITLE = {Dynamic High-Resolution Network for Semantic Segmentation in Remote-Sensing Images},
+JOURNAL = {Remote Sensing},
+VOLUME = {15},
+YEAR = {2023},
+NUMBER = {9},
+ARTICLE-NUMBER = {2293},
+URL = {https://www.mdpi.com/2072-4292/15/9/2293},
+ISSN = {2072-4292},
+ABSTRACT = {Semantic segmentation of remote-sensing (RS) images is one of the most fundamental tasks in the understanding of a remote-sensing scene. However, high-resolution RS images contain plentiful detailed information about ground objects, which scatter everywhere spatially and have variable sizes, styles, and visual appearances. Due to the high similarity between classes and diversity within classes, it is challenging to obtain satisfactory and accurate semantic segmentation results. This paper proposes a Dynamic High-Resolution Network (DyHRNet) to solve this problem. Our proposed network takes HRNet as a super-architecture, aiming to leverage the important connections and channels by further investigating the parallel streams at different resolution representations of the original HRNet. The learning task is conducted under the framework of a neural architecture search (NAS) and channel-wise attention module. Specifically, the Accelerated Proximal Gradient (APG) algorithm is introduced to iteratively solve the sparse regularization subproblem from the perspective of neural architecture search. In this way, valuable connections are selected for cross-resolution feature fusion. In addition, a channel-wise attention module is designed to weight the channel contributions for feature aggregation. Finally, DyHRNet fully realizes the dynamic advantages of data adaptability by combining the APG algorithm and channel-wise attention module simultaneously. Compared with nine classical or state-of-the-art models (FCN, UNet, PSPNet, DeepLabV3+, OCRNet, SETR, SegFormer, HRNet+FCN, and HRNet+OCR), DyHRNet has shown high performance on three public challenging RS image datasets (Vaihingen, Potsdam, and LoveDA). Furthermore, the visual segmentation results, the learned structures, the iteration process analysis, and the ablation study all demonstrate the effectiveness of our proposed model.},
+DOI = {10.3390/rs15092293},
+keywords={semantic segmentation;remote-sensing image;neural architecture search;sparse regularization;HRNet},
+preview={DyHRNet.jpg},
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+
+@INPROCEEDINGS{ScaleSeg,
+  author={Yang, Qi and Nie, Xing and Shi, Linsu and Yu, Jiazhong and Li, Fei and Xiang, Shiming},
+  booktitle={2023 IEEE International Conference on Data Mining (ICDM)}, 
+  title={Continual Semantic Segmentation via Scalable Contrastive Clustering and Background Diversity}, 
+  abstract={Despite the efficacy towards static data distribution, traditional semantic segmentation methods encounter Catastrophic forgetting when tackling continually changing data streams. Another fundamental challenge is Background shift, which results from the semantic drift of the background class during continual learning steps. To extend the applicability of semantic segmentation methods, we introduce a novel, scalable segmentation architecture called ScaleSeg, designed to adapt the incremental scenarios. The architecture of ScaleSeg consists of a series of prototypes updated by online contrastive clustering. Additionally, we propose a background diversity strategy to enhance the model’s plasticity and stability, thus overcoming background shift. Comprehensive experiments and ablation studies on challenging benchmarks demonstrate that ScaleSeg surpasses previous state-of-the-art methods, particularly when dealing with extensive task sequences.},
+  keywords={Semantic segmentation;Semantics;Prototypes;Stability analysis;Data mining;Task analysis;Streams;Continual learning;Semantic segmentation;Prototype;Contrastive clustering;Background diversity},
+  year={2023},
+  volume={},
+  number={},
+  pages={1475-1480},
+  url={https://ieeexplore.ieee.org/document/10415751},
+  keywords={Semantic segmentation;Semantics;Prototypes;Stability analysis;Data mining;Task analysis;Streams;Continual learning;Semantic segmentation;Prototype;Contrastive clustering;Background diversity},
+  doi={10.1109/ICDM58522.2023.00194},
+  preview={ScaleSeg.jpg},
+  ISSN={2374-8486},
+  month={Dec},}
+  }
+
+
+@Article{IQ2Former,
+AUTHOR = {Guo, Shichen and Yang, Qi and Xiang, Shiming and Wang, Shuwen and Wang, Xuezhi},
+TITLE = {Mask2Former with Improved Query for Semantic Segmentation in Remote-Sensing Images},
+JOURNAL = {Mathematics},
+VOLUME = {12},
+YEAR = {2024},
+NUMBER = {5},
+ARTICLE-NUMBER = {765},
+URL = {https://www.mdpi.com/2227-7390/12/5/765},
+ISSN = {2227-7390},
+ABSTRACT = {Semantic segmentation of remote sensing (RS) images is vital in various practical applications, including urban construction planning, natural disaster monitoring, and land resources investigation. However, RS images are captured by airplanes or satellites at high altitudes and long distances, resulting in ground objects of the same category being scattered in various corners of the image. Moreover, objects of different sizes appear simultaneously in RS images. For example, some objects occupy a large area in urban scenes, while others only have small regions. Technically, the above two universal situations pose significant challenges to the segmentation with a high quality for RS images. Based on these observations, this paper proposes a Mask2Former with an improved query (IQ2Former) for this task. The fundamental motivation behind the IQ2Former is to enhance the capability of the query of Mask2Former by exploiting the characteristics of RS images well. First, we propose the Query Scenario Module (QSM), which aims to learn and group the queries from feature maps, allowing the selection of distinct scenarios such as the urban and rural areas, building clusters, and parking lots. Second, we design the query position module (QPM), which is developed to assign the image position information to each query without increasing the number of parameters, thereby enhancing the model’s sensitivity to small targets in complex scenarios. Finally, we propose the query attention module (QAM), which is constructed to leverage the characteristics of query attention to extract valuable features from the preceding queries. Being positioned between the duplicated transformer decoder layers, QAM ensures the comprehensive utilization of the supervisory information and the exploitation of those fine-grained details. Architecturally, the QSM, QPM, and QAM as well as an end-to-end model are assembled to achieve high-quality semantic segmentation. In comparison to the classical or state-of-the-art models (FCN, PSPNet, DeepLabV3+, OCRNet, UPerNet, MaskFormer, Mask2Former), IQ2Former has demonstrated exceptional performance across three publicly challenging remote-sensing image datasets, 83.59 mIoU on the Vaihingen dataset, 87.89 mIoU on Potsdam dataset, and 56.31 mIoU on LoveDA dataset. Additionally, overall accuracy, ablation experiment, and visualization segmentation results all indicate IQ2Former validity.},
+DOI = {10.3390/math12050765},
+preview={IQ2Former.jpg},
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+
+@misc{COMBO,
+      title={Cooperation Does Matter: Exploring Multi-Order Bilateral Relations for Audio-Visual Segmentation}, 
+      author={Qi Yang and Xing Nie and Tong Li and Pengfei Gao and Ying Guo and Cheng Zhen and Pengfei Yan and Shiming Xiang},
+      year={2023},
+      eprint={2312.06462},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      preview={COMBO.jpg},
+      url={https://arxiv.org/abs/2312.06462},
+      abstract={Recently, an audio-visual segmentation (AVS) task has been introduced, aiming to group pixels with sounding objects within a given video. This task necessitates a first-ever audio-driven pixel-level understanding of the scene, posing significant challenges. In this paper, we propose an innovative audio-visual transformer framework, termed COMBO, an acronym for COoperation of Multi-order Bilateral relatiOns. For the first time, our framework explores three types of bilateral entanglements within AVS: pixel entanglement, modality entanglement, and temporal entanglement. Regarding pixel entanglement, we employ a Siam-Encoder Module (SEM) that leverages prior knowledge to generate more precise visual features from the foundational model. For modality entanglement, we design a Bilateral-Fusion Module (BFM), enabling COMBO to align corresponding visual and auditory signals bi-directionally. As for temporal entanglement, we introduce an innovative adaptive inter-frame consistency loss according to the inherent rules of temporal. Comprehensive experiments and ablation studies on AVSBench-object (84.7 mIoU on S4, 59.2 mIou on MS3) and AVSBench-semantic (42.1 mIoU on AVSS) datasets demonstrate that COMBO surpasses previous state-of-the-art methods.}
 }
 
-@article{PhysRev.47.777,
+
+article{PhysRev.47.777,  去掉at符号即注释掉该引用
   abbr={PhysRev},
   title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
   author={Einstein, A. and Podolsky, B. and Rosen, N.},
@@ -56,34 +89,10 @@
   selected={true}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
 
-@book{przibram1967letters,
+book{przibram1967letters,
   bibtex_show={true},
   title={Letters on wave mechanics},
   author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
