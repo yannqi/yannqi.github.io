@@ -2,18 +2,18 @@
 
 
 @Article{DyHRNet,
-AUTHOR = {Guo, Shichen and Yang, Qi and Xiang, Shiming and Wang, Pengfei and Wang, Xuezhi},
-TITLE = {Dynamic High-Resolution Network for Semantic Segmentation in Remote-Sensing Images},
-JOURNAL = {Remote Sensing},
-VOLUME = {15},
-YEAR = {2023},
-NUMBER = {9},
-ARTICLE-NUMBER = {2293},
-URL = {https://www.mdpi.com/2072-4292/15/9/2293},
-html = {https://www.mdpi.com/2072-4292/15/9/2293},
-ISSN = {2072-4292},
-ABSTRACT = {Semantic segmentation of remote-sensing (RS) images is one of the most fundamental tasks in the understanding of a remote-sensing scene. However, high-resolution RS images contain plentiful detailed information about ground objects, which scatter everywhere spatially and have variable sizes, styles, and visual appearances. Due to the high similarity between classes and diversity within classes, it is challenging to obtain satisfactory and accurate semantic segmentation results. This paper proposes a Dynamic High-Resolution Network (DyHRNet) to solve this problem. Our proposed network takes HRNet as a super-architecture, aiming to leverage the important connections and channels by further investigating the parallel streams at different resolution representations of the original HRNet. The learning task is conducted under the framework of a neural architecture search (NAS) and channel-wise attention module. Specifically, the Accelerated Proximal Gradient (APG) algorithm is introduced to iteratively solve the sparse regularization subproblem from the perspective of neural architecture search. In this way, valuable connections are selected for cross-resolution feature fusion. In addition, a channel-wise attention module is designed to weight the channel contributions for feature aggregation. Finally, DyHRNet fully realizes the dynamic advantages of data adaptability by combining the APG algorithm and channel-wise attention module simultaneously. Compared with nine classical or state-of-the-art models (FCN, UNet, PSPNet, DeepLabV3+, OCRNet, SETR, SegFormer, HRNet+FCN, and HRNet+OCR), DyHRNet has shown high performance on three public challenging RS image datasets (Vaihingen, Potsdam, and LoveDA). Furthermore, the visual segmentation results, the learned structures, the iteration process analysis, and the ablation study all demonstrate the effectiveness of our proposed model.},
-DOI = {10.3390/rs15092293},
+AUTHOR={Guo, Shichen and Yang, Qi and Xiang, Shiming and Wang, Pengfei and Wang, Xuezhi},
+TITLE={Dynamic High-Resolution Network for Semantic Segmentation in Remote-Sensing Images},
+JOURNAL={Remote Sensing},
+VOLUME={15},
+YEAR={2023},
+NUMBER={9},
+ARTICLE-NUMBER={2293},
+URL={https://www.mdpi.com/2072-4292/15/9/2293},
+html={https://www.mdpi.com/2072-4292/15/9/2293},
+ISSN={2072-4292},
+ABSTRACT={Semantic segmentation of remote-sensing (RS) images is one of the most fundamental tasks in the understanding of a remote-sensing scene. However, high-resolution RS images contain plentiful detailed information about ground objects, which scatter everywhere spatially and have variable sizes, styles, and visual appearances. Due to the high similarity between classes and diversity within classes, it is challenging to obtain satisfactory and accurate semantic segmentation results. This paper proposes a Dynamic High-Resolution Network (DyHRNet) to solve this problem. Our proposed network takes HRNet as a super-architecture, aiming to leverage the important connections and channels by further investigating the parallel streams at different resolution representations of the original HRNet. The learning task is conducted under the framework of a neural architecture search (NAS) and channel-wise attention module. Specifically, the Accelerated Proximal Gradient (APG) algorithm is introduced to iteratively solve the sparse regularization subproblem from the perspective of neural architecture search. In this way, valuable connections are selected for cross-resolution feature fusion. In addition, a channel-wise attention module is designed to weight the channel contributions for feature aggregation. Finally, DyHRNet fully realizes the dynamic advantages of data adaptability by combining the APG algorithm and channel-wise attention module simultaneously. Compared with nine classical or state-of-the-art models (FCN, UNet, PSPNet, DeepLabV3+, OCRNet, SETR, SegFormer, HRNet+FCN, and HRNet+OCR), DyHRNet has shown high performance on three public challenging RS image datasets (Vaihingen, Potsdam, and LoveDA). Furthermore, the visual segmentation results, the learned structures, the iteration process analysis, and the ablation study all demonstrate the effectiveness of our proposed model.},
+DOI={10.3390/rs15092293},
 keywords={semantic segmentation;remote-sensing image;neural architecture search;sparse regularization;HRNet},
 preview={DyHRNet.jpg},
 }
@@ -40,18 +40,18 @@ preview={DyHRNet.jpg},
 
 
 @Article{IQ2Former,
-AUTHOR = {Guo, Shichen and Yang, Qi and Xiang, Shiming and Wang, Shuwen and Wang, Xuezhi},
-TITLE = {Mask2Former with Improved Query for Semantic Segmentation in Remote-Sensing Images},
-JOURNAL = {Mathematics},
-VOLUME = {12},
-YEAR = {2024},
-NUMBER = {5},
-ARTICLE-NUMBER = {765},
-URL = {https://www.mdpi.com/2227-7390/12/5/765},
-html = {https://www.mdpi.com/2227-7390/12/5/765},
-ISSN = {2227-7390},
-ABSTRACT = {Semantic segmentation of remote sensing (RS) images is vital in various practical applications, including urban construction planning, natural disaster monitoring, and land resources investigation. However, RS images are captured by airplanes or satellites at high altitudes and long distances, resulting in ground objects of the same category being scattered in various corners of the image. Moreover, objects of different sizes appear simultaneously in RS images. For example, some objects occupy a large area in urban scenes, while others only have small regions. Technically, the above two universal situations pose significant challenges to the segmentation with a high quality for RS images. Based on these observations, this paper proposes a Mask2Former with an improved query (IQ2Former) for this task. The fundamental motivation behind the IQ2Former is to enhance the capability of the query of Mask2Former by exploiting the characteristics of RS images well. First, we propose the Query Scenario Module (QSM), which aims to learn and group the queries from feature maps, allowing the selection of distinct scenarios such as the urban and rural areas, building clusters, and parking lots. Second, we design the query position module (QPM), which is developed to assign the image position information to each query without increasing the number of parameters, thereby enhancing the model’s sensitivity to small targets in complex scenarios. Finally, we propose the query attention module (QAM), which is constructed to leverage the characteristics of query attention to extract valuable features from the preceding queries. Being positioned between the duplicated transformer decoder layers, QAM ensures the comprehensive utilization of the supervisory information and the exploitation of those fine-grained details. Architecturally, the QSM, QPM, and QAM as well as an end-to-end model are assembled to achieve high-quality semantic segmentation. In comparison to the classical or state-of-the-art models (FCN, PSPNet, DeepLabV3+, OCRNet, UPerNet, MaskFormer, Mask2Former), IQ2Former has demonstrated exceptional performance across three publicly challenging remote-sensing image datasets, 83.59 mIoU on the Vaihingen dataset, 87.89 mIoU on Potsdam dataset, and 56.31 mIoU on LoveDA dataset. Additionally, overall accuracy, ablation experiment, and visualization segmentation results all indicate IQ2Former validity.},
-DOI = {10.3390/math12050765},
+AUTHOR={Guo, Shichen and Yang, Qi and Xiang, Shiming and Wang, Shuwen and Wang, Xuezhi},
+TITLE={Mask2Former with Improved Query for Semantic Segmentation in Remote-Sensing Images},
+JOURNAL={Mathematics},
+VOLUME={12},
+YEAR={2024},
+NUMBER={5},
+ARTICLE-NUMBER={765},
+URL={https://www.mdpi.com/2227-7390/12/5/765},
+html={https://www.mdpi.com/2227-7390/12/5/765},
+ISSN={2227-7390},
+ABSTRACT={Semantic segmentation of remote sensing (RS) images is vital in various practical applications, including urban construction planning, natural disaster monitoring, and land resources investigation. However, RS images are captured by airplanes or satellites at high altitudes and long distances, resulting in ground objects of the same category being scattered in various corners of the image. Moreover, objects of different sizes appear simultaneously in RS images. For example, some objects occupy a large area in urban scenes, while others only have small regions. Technically, the above two universal situations pose significant challenges to the segmentation with a high quality for RS images. Based on these observations, this paper proposes a Mask2Former with an improved query (IQ2Former) for this task. The fundamental motivation behind the IQ2Former is to enhance the capability of the query of Mask2Former by exploiting the characteristics of RS images well. First, we propose the Query Scenario Module (QSM), which aims to learn and group the queries from feature maps, allowing the selection of distinct scenarios such as the urban and rural areas, building clusters, and parking lots. Second, we design the query position module (QPM), which is developed to assign the image position information to each query without increasing the number of parameters, thereby enhancing the model’s sensitivity to small targets in complex scenarios. Finally, we propose the query attention module (QAM), which is constructed to leverage the characteristics of query attention to extract valuable features from the preceding queries. Being positioned between the duplicated transformer decoder layers, QAM ensures the comprehensive utilization of the supervisory information and the exploitation of those fine-grained details. Architecturally, the QSM, QPM, and QAM as well as an end-to-end model are assembled to achieve high-quality semantic segmentation. In comparison to the classical or state-of-the-art models (FCN, PSPNet, DeepLabV3+, OCRNet, UPerNet, MaskFormer, Mask2Former), IQ2Former has demonstrated exceptional performance across three publicly challenging remote-sensing image datasets, 83.59 mIoU on the Vaihingen dataset, 87.89 mIoU on Potsdam dataset, and 56.31 mIoU on LoveDA dataset. Additionally, overall accuracy, ablation experiment, and visualization segmentation results all indicate IQ2Former validity.},
+DOI={10.3390/math12050765},
 preview={IQ2Former.jpg},
 }
 
@@ -65,42 +65,7 @@ preview={IQ2Former.jpg},
       primaryClass={cs.CV},
       preview={COMBO.jpg},
       url={https://arxiv.org/abs/2312.06462},
-      html=url={https://arxiv.org/abs/2312.06462},
+      html={https://arxiv.org/abs/2312.06462},
       abstract={Recently, an audio-visual segmentation (AVS) task has been introduced, aiming to group pixels with sounding objects within a given video. This task necessitates a first-ever audio-driven pixel-level understanding of the scene, posing significant challenges. In this paper, we propose an innovative audio-visual transformer framework, termed COMBO, an acronym for COoperation of Multi-order Bilateral relatiOns. For the first time, our framework explores three types of bilateral entanglements within AVS: pixel entanglement, modality entanglement, and temporal entanglement. Regarding pixel entanglement, we employ a Siam-Encoder Module (SEM) that leverages prior knowledge to generate more precise visual features from the foundational model. For modality entanglement, we design a Bilateral-Fusion Module (BFM), enabling COMBO to align corresponding visual and auditory signals bi-directionally. As for temporal entanglement, we introduce an innovative adaptive inter-frame consistency loss according to the inherent rules of temporal. Comprehensive experiments and ablation studies on AVSBench-object (84.7 mIoU on S4, 59.2 mIou on MS3) and AVSBench-semantic (42.1 mIoU on AVSS) datasets demonstrate that COMBO surpasses previous state-of-the-art methods.}
 }
 
-
-article{PhysRev.47.777,  去掉at符号即注释掉该引用
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  selected={true}
-}
-
-
-
-
-book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
-}
