@@ -5,5 +5,3 @@ inline: true
 related_posts: false
 ---
 Congratulations on our paper [Cooperation Does Matter: Exploring Multi-Order Bilateral Relations for Audio-Visual Segmentation](https://yannqi.github.io/AVS-COMBO/) being accepted by CVPR 2024! 😄
-
-Add news: Our paper is also marked as Highlight Paper! 😮
