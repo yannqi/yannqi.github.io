@@ -59,13 +59,27 @@ preview={IQ2Former.jpg},
 @misc{COMBO,
       title={Cooperation Does Matter: Exploring Multi-Order Bilateral Relations for Audio-Visual Segmentation}, 
       author={Qi Yang and Xing Nie and Tong Li and Pengfei Gao and Ying Guo and Cheng Zhen and Pengfei Yan and Shiming Xiang},
-      year={2023},
-      eprint={2312.06462},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
+      year={2024},
+      booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+      pages={27134--27143},
       preview={COMBO.jpg},
       url={https://arxiv.org/abs/2312.06462},
       html={https://arxiv.org/abs/2312.06462},
       abstract={Recently, an audio-visual segmentation (AVS) task has been introduced, aiming to group pixels with sounding objects within a given video. This task necessitates a first-ever audio-driven pixel-level understanding of the scene, posing significant challenges. In this paper, we propose an innovative audio-visual transformer framework, termed COMBO, an acronym for COoperation of Multi-order Bilateral relatiOns. For the first time, our framework explores three types of bilateral entanglements within AVS: pixel entanglement, modality entanglement, and temporal entanglement. Regarding pixel entanglement, we employ a Siam-Encoder Module (SEM) that leverages prior knowledge to generate more precise visual features from the foundational model. For modality entanglement, we design a Bilateral-Fusion Module (BFM), enabling COMBO to align corresponding visual and auditory signals bi-directionally. As for temporal entanglement, we introduce an innovative adaptive inter-frame consistency loss according to the inherent rules of temporal. Comprehensive experiments and ablation studies on AVSBench-object (84.7 mIoU on S4, 59.2 mIou on MS3) and AVSBench-semantic (42.1 mIoU on AVSS) datasets demonstrate that COMBO surpasses previous state-of-the-art methods.}
 }
+
+
+
+@misc{DrawAnAudio,
+      title={Draw an Audio: Leveraging Multi-Instruction for Video-to-Audio Synthesis}, 
+      author={Qi Yang and Binjie Mao and Zili Wang and Xing Nie and Pengfei Gao and Ying Guo and Cheng Zhen and Pengfei Yan and Shiming Xiang},
+      year={2024},
+      eprint={2409.06135},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD},
+      url={https://arxiv.org/abs/2409.06135}, 
+      html={https://arxiv.org/abs/2409.06135}, 
+      abstract={Foley is a term commonly used in filmmaking, referring to the addition of daily sound effects to silent films or videos to enhance the auditory experience. Video-to-Audio (V2A), as a particular type of automatic foley task, presents inherent challenges related to audio-visual synchronization. These challenges encompass maintaining the content consistency between the input video and the generated audio, as well as the alignment of temporal and loudness properties within the video. To address these issues, we construct a controllable video-to-audio synthesis model, termed Draw an Audio, which supports multiple input instructions through drawn masks and loudness signals. To ensure content consistency between the synthesized audio and target video, we introduce the Mask-Attention Module (MAM), which employs masked video instruction to enable the model to focus on regions of interest. Additionally, we implement the Time-Loudness Module (TLM), which uses an auxiliary loudness signal to ensure the synthesis of sound that aligns with the video in both loudness and temporal dimensions. Furthermore, we have extended a large-scale V2A dataset, named VGGSound-Caption, by annotating caption prompts. Extensive experiments on challenging benchmarks across two large-scale V2A datasets verify Draw an Audio achieves the state-of-the-art.},
+      preview={Foley.jpg},
+      }
 
