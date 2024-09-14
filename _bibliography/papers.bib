@@ -35,7 +35,6 @@ preview={DyHRNet.jpg},
   doi={10.1109/ICDM58522.2023.00194},
   preview={ScaleSeg.jpg},
   ISSN={2374-8486},
-  month={Dec},}
   }
 
 
@@ -56,10 +55,12 @@ preview={IQ2Former.jpg},
 }
 
 
-@misc{COMBO,
+@INPROCEEDINGS{COMBO,
       title={Cooperation Does Matter: Exploring Multi-Order Bilateral Relations for Audio-Visual Segmentation}, 
       author={Qi Yang and Xing Nie and Tong Li and Pengfei Gao and Ying Guo and Cheng Zhen and Pengfei Yan and Shiming Xiang},
       year={2024},
+      volume={},
+      number={},
       booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
       pages={27134--27143},
       preview={COMBO.jpg},
@@ -83,3 +84,14 @@ preview={IQ2Former.jpg},
       preview={Foley.jpg},
       }
 
+@misc{AVESFormer,
+      title={AVESFormer: Efficient Transformer Design for Real-Time Audio-Visual Segmentation}, 
+      author={Zili Wang and Qi Yang and Linsu Shi and Jiazhong Yu and Qinghua Liang and Fei Li and Shiming Xiang},
+      year={2024},
+      eprint={2408.01708},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2408.01708}, 
+      preview={AVESFormer.jpg},
+      abstract={Recently, transformer-based models have demonstrated remarkable performance on audio-visual segmentation (AVS) tasks. However, their expensive computational cost makes real-time inference impractical. By characterizing attention maps of the network, we identify two key obstacles in AVS models: 1) attention dissipation, corresponding to the over-concentrated attention weights by Softmax within restricted frames, and 2) inefficient, burdensome transformer decoder, caused by narrow focus patterns in early stages. In this paper, we introduce AVESFormer, the first real-time Audio-Visual Efficient Segmentation transformer that achieves fast, efficient and light-weight simultaneously. Our model leverages an efficient prompt query generator to correct the behaviour of cross-attention. Additionally, we propose ELF decoder to bring greater efficiency by facilitating convolutions suitable for local features to reduce computational burdens. Extensive experiments demonstrate that our AVESFormer significantly enhances model performance, achieving 79.9% on S4, 57.9% on MS3 and 31.2% on AVSS, outperforming previous state-of-the-art and achieving an excellent trade-off between performance and speed. },
+}
