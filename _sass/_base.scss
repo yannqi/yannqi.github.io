@@ -37,6 +37,7 @@ table {
 a,
 table.table a {
   color: var(--global-theme-color);
+  transition: color 0.2s ease;
 
   &:hover {
     color: var(--global-theme-color);
@@ -199,6 +200,7 @@ ul.task-list input[type="checkbox"] {
     margin-bottom: 5px;
     margin-top: 5px;
     font-family: monospace;
+    font-size: 0.875rem;
 
     p {
       display: inline-block;
@@ -208,11 +210,11 @@ ul.task-list input[type="checkbox"] {
 }
 
 .profile.float-right {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 
 .profile.float-left {
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 
 @media (min-width: 576px) {
@@ -289,6 +291,7 @@ ul.task-list input[type="checkbox"] {
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+    transition: color 0.2s ease;
 
     &:hover {
       color: var(--global-hover-color);
@@ -691,11 +694,23 @@ footer.sticky-bottom {
 
     li {
       margin-bottom: 1rem;
+      padding: 0.75rem 0.5rem;
+      transition: background-color 0.2s ease;
+      border-radius: 6px;
+
+      &:hover {
+        background-color: rgba(128, 128, 128, 0.06);
+      }
 
       .preview {
         width: 100%;
         min-width: 80px;
         max-width: 200px;
+        transition: transform 0.2s ease;
+
+        &:hover {
+          transform: scale(1.03);
+        }
       }
 
       .abbr {

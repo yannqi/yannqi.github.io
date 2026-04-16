@@ -1,6 +1,23 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"CVPR":
+  url: https://cvpr.thecvf.com/
+  color: "#d32f2f"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"ICDM":
+  url: https://www.ieee.org/conferences-events/
+  color: "#1565c0"
+
+"Neurocomputing":
+  url: https://www.sciencedirect.com/journal/neurocomputing
+  color: "#2e7d32"
+
+"Remote Sensing":
+  url: https://www.mdpi.com/journal/remotesensing
+  color: "#00796b"
+
+"Mathematics":
+  url: https://www.mdpi.com/journal/mathematics
+  color: "#5e35b1"
+
+"arXiv":
+  url: https://arxiv.org/
+  color: "#b71c1c"

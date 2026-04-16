@@ -8,7 +8,7 @@ middle_name:
 last_name: Yang
 email: yangqi2021@ia.ac.cn
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Qi Yang's academic homepage. Research in computer vision, multi-modal learning, and AIGC.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with theme <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
   Hosted by <a href="https://yannqi.github.com/" target="_blank">GitHub Pages</a>.
@@ -49,7 +49,7 @@ navbar_fixed: true
 footer_fixed: true
 
 # Dimensions
-max_width: 800px
+max_width: 936px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -72,7 +72,7 @@ x_username: # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: # your LinkedIn user name
 telegram_username: # your Telegram user name
-scholar_userid: # your Google Scholar ID
+scholar_userid: O5YpwU0AAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: 0000-0001-8373-6096 # your ORCID ID
@@ -103,7 +103,7 @@ zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 
 contact_note: >
-  This page is on-going.
+  Feel free to reach out for collaboration or discussion.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -177,7 +177,7 @@ collections:
 announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: 7 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: false
@@ -286,8 +286,8 @@ display_categories: ["blockquotes"] # these categories will be displayed on the 
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Yang]
+  first_name: [Qi, Q.]
 
   style: apa
   locale: en
