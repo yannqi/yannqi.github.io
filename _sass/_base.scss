@@ -4,6 +4,26 @@
 
 // Typography
 
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Merriweather', 'Georgia', 'Times New Roman', serif;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
 p,
 h1,
 h2,
@@ -199,7 +219,7 @@ ul.task-list input[type="checkbox"] {
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: monospace;
+    font-family: 'Inter', sans-serif;
     font-size: 0.875rem;
 
     p {
@@ -219,7 +239,7 @@ ul.task-list input[type="checkbox"] {
 
 @media (min-width: 576px) {
   .profile {
-    width: 30%;
+    width: 32%;
 
     .address {
       p {
@@ -243,13 +263,39 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Academic section headings and spacing
+.about-section {
+  margin-bottom: 3rem;
+}
+
+.section-heading {
+  font-family: 'Merriweather', 'Georgia', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--global-text-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--global-theme-color);
+  display: inline-block;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+}
+
 // Navbar customization
 
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
-  opacity: 0.95;
+  opacity: 1;
 }
 
 .navbar .dropdown-menu {
@@ -289,9 +335,21 @@ ul.task-list input[type="checkbox"] {
     color: var(--global-text-color);
   }
 
+  .navbar-brand.title {
+    font-family: 'Merriweather', 'Georgia', serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: -0.01em;
+  }
+
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
     transition: color 0.2s ease;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 
     &:hover {
       color: var(--global-hover-color);
@@ -300,7 +358,7 @@ ul.task-list input[type="checkbox"] {
 
   .navbar-nav .nav-item.active > .nav-link {
     background-color: inherit;
-    font-weight: bolder;
+    font-weight: 700;
     color: var(--global-theme-color);
 
     &:hover {
@@ -439,17 +497,18 @@ ul.task-list input[type="checkbox"] {
 // Footer
 footer.fixed-bottom {
   background-color: var(--global-footer-bg-color);
-  font-size: 0.75rem;
+  font-size: 0.8rem;
 
   .container {
     color: var(--global-footer-text-color);
-    padding-top: 9px;
-    padding-bottom: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     text-align: center;
   }
 
   a {
     color: var(--global-footer-link-color);
+    transition: color 0.2s ease;
 
     &:hover {
       color: var(--global-theme-color);
@@ -459,13 +518,25 @@ footer.fixed-bottom {
 }
 
 footer.sticky-bottom {
+  background-color: var(--global-footer-bg-color);
   border-top: 1px solid var(--global-divider-color);
   padding-top: 40px;
   padding-bottom: 40px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  color: var(--global-footer-text-color);
 
   .container {
     text-align: center;
+  }
+
+  a {
+    color: var(--global-footer-link-color);
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--global-hover-color);
+      text-decoration: none;
+    }
   }
 }
 
@@ -679,12 +750,13 @@ footer.sticky-bottom {
   }
 
   h2.bibliography {
-    color: var(--global-divider-color);
+    color: var(--global-text-color-light);
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     margin-bottom: -2rem;
     text-align: right;
+    font-size: 1.3rem;
   }
 
   ol.bibliography {
@@ -699,7 +771,7 @@ footer.sticky-bottom {
       border-radius: 6px;
 
       &:hover {
-        background-color: rgba(128, 128, 128, 0.06);
+        background-color: rgba(128, 128, 128, 0.05);
       }
 
       .preview {
@@ -722,6 +794,9 @@ footer.sticky-bottom {
           background-color: var(--global-theme-color);
           padding-left: 1rem;
           padding-right: 1rem;
+          border-radius: 3px;
+          font-size: 0.8rem;
+          letter-spacing: 0.03em;
 
           a {
             color: white;
@@ -735,19 +810,26 @@ footer.sticky-bottom {
         .award {
           color: var(--global-theme-color) !important;
           border: 1px solid var(--global-theme-color);
+          border-radius: 3px;
         }
       }
 
       .title {
-        font-weight: bolder;
+        font-family: 'Merriweather', 'Georgia', serif;
+        font-weight: 700;
+        font-size: 1.02rem;
+        line-height: 1.4;
       }
 
       .author {
+        font-size: 0.92rem;
+
         a {
-          border-bottom: 1px dashed var(--global-theme-color);
+          border-bottom: 1px dashed rgba(0, 33, 71, 0.3);
 
           &:hover {
             border-bottom-style: solid;
+            border-bottom-color: var(--global-theme-color);
             text-decoration: none;
           }
         }
@@ -772,12 +854,12 @@ footer.sticky-bottom {
       .links {
         a.btn {
           color: var(--global-text-color);
-          border: 1px solid var(--global-text-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
-          padding-top: 0.25rem;
-          padding-bottom: 0.25rem;
+          border: 1px solid var(--global-divider-color);
+          padding: 0.15rem 0.75rem;
           margin-left: 0;
+          font-size: 0.8rem;
+          border-radius: 3px;
+          transition: all 0.2s ease;
 
           &:hover {
             color: var(--global-theme-color);
@@ -790,7 +872,7 @@ footer.sticky-bottom {
         padding-bottom: 0.5rem;
         span {
           display: inline-block;
-          color: $black-color;
+          color: var(--global-text-color);
           height: 100%;
           padding-right: 0.5rem;
           vertical-align: middle;
@@ -806,14 +888,10 @@ footer.sticky-bottom {
         max-height: 0px;
         overflow: hidden;
         text-align: justify;
-        transition-property: 0.15s ease;
-        -moz-transition: 0.15s ease;
-        -ms-transition: 0.15s ease;
-        -o-transition: 0.15s ease;
         transition: all 0.15s ease;
 
         p {
-          line-height: 1.4em;
+          line-height: 1.5em;
           margin: 10px;
         }
 
@@ -826,10 +904,6 @@ footer.sticky-bottom {
 
       .hidden.open {
         max-height: 100em;
-        transition-property: 0.15s ease;
-        -moz-transition: 0.15s ease;
-        -ms-transition: 0.15s ease;
-        -o-transition: 0.15s ease;
         transition: all 0.15s ease;
       }
 

@@ -10,7 +10,7 @@ profile:
   image: icon.png
   image_circular: false
   more_info: >
-    <p>Goku, my favorite cartoon character.</p>
+    <p>Beijing, China</p>
 news: true
 selected_papers: true
 social: true

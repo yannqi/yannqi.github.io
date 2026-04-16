@@ -42,31 +42,37 @@ layout: default
 
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
+      <div class="about-section">
+        <h2 class="section-heading">
+          <a href="{{ '/news/' | relative_url }}">News</a>
+        </h2>
+        {% include news.liquid limit=true %}
+      </div>
     {% endif %}
 
     <!-- Latest posts -->
     {% if site.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
+      <div class="about-section">
+        <h2 class="section-heading">
+          <a href="{{ '/blog/' | relative_url }}">Latest Posts</a>
+        </h2>
+        {% include latest_posts.liquid %}
+      </div>
     {% endif %}
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
+      <div class="about-section">
+        <h2 class="section-heading">
+          <a href="{{ '/publications/' | relative_url }}">Selected Publications</a>
+        </h2>
+        {% include selected_papers.liquid %}
+      </div>
     {% endif %}
 
     <!-- Social -->
     {% if page.social %}
-      <div class="social">
+      <div class="social about-section">
         <div class="contact-icons">{% include social.liquid %}</div>
 
         <div class="contact-note">{{ site.contact_note }}</div>
