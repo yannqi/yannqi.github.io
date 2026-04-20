@@ -1,7 +1,8 @@
 ---
 layout: post
-date: 2024-04-06 11:23:00-0400
+date: 2025-5-1 10:00:00-0400
 inline: true
 related_posts: false
 ---
-Congratulations on our paper [Cooperation Does Matter: Exploring Multi-Order Bilateral Relations for Audio-Visual Segmentation](https://yannqi.github.io/AVS-COMBO/) being marked as CVPR 2024 Highlight Paper! 😮
+
+Congratulations! Our paper [RCTS: Re-ranking Reasoning Context with Tree Search Makes Large Vision-Language Models Stronger](https://arxiv.org/abs/2506.07785) has been marked as ICML 2025 Spotlight Paper! 😮

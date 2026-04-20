@@ -1,7 +1,8 @@
 ---
 layout: post
-date: 2024-02-29 11:17:00-0400
+date: 2024-09-06 10:00:00-0400
 inline: true
 related_posts: false
 ---
-Congratulations on our paper [Cooperation Does Matter: Exploring Multi-Order Bilateral Relations for Audio-Visual Segmentation](https://yannqi.github.io/AVS-COMBO/) being accepted by CVPR 2024! 😄
+
+Our paper [Draw an Audio: Leveraging Multi-Instruction for Video-to-Audio Synthesis](https://arxiv.org/abs/2409.06135) is now available on arXiv!

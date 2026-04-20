@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Congratulations! Our paper [RCTS: Re-ranking Reasoning Context with Tree Search Makes Large Vision-Language Models Stronger](https://arxiv.org/abs/2506.07785) has been marked as ICML 2025 Spotlight Paper! 😮
+Congratulations! Our paper [R-4B: Incentivizing General-Purpose Auto-Thinking Capability in MLLMs](https://arxiv.org/abs/2508.21113) has been accepted by CVPR!
